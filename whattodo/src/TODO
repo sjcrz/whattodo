@@ -1,0 +1,33 @@
+What will this look like: 
+
+Home page: What task should I be doing right now??
+
+Task input: Name, description (optional), due date (optional), estimated hours (estimated)
+Then, arrange it into the priority queue
+
+Event input: Name, description (optional), date, recurrance (optional)
+- Regular events: breakfast, lunch, dinner, sleep (have them already there)
+- Other events: scheduled via the UI
+
+Frontend views: 
+- Homepage: pomodoro page displaying what you should be working on and scheduling breaks
+- Time block page: view your scheduled tasks/events in a time block grid 
+- Task input page
+    - Input UI
+    - Sort by priority
+    - Sort by due date
+- Event input page (maybe have a gcal importer for this?)
+    - Input UI 
+    - Calendar view
+
+Backend: 
+- Scheduler
+    - Greedy - try to do tasks as soon as possible in order of priority 
+    - Lets you know if you won't be finishing in time, will sacrifice lower priority tasks to make time 
+- Input receiver
+    - Send to db
+- Event receiver
+    - Send to db 
+- Database diagram - mongo for this since many optional params? 
+
+
